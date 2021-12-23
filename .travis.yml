@@ -10,6 +10,7 @@ jobs:
   - stage: test
   - stage: deploy
     script: bash docker_push.sh
+    if: branch = main
 env:
   global:
   - secure: S8gtLEl8eZFulHOD1uxzbd2m7mWR0JraodrX1NncJu8uyTVOPOqjqt6eex+Cc8pBPm0sEZ72226Gk1dGEgFl7/wGuB0bbu03t8floWzGbEv7uc6EJImn5SPGwHWvNrCksKJTnzvjrnn2Qx/DpSN4qlR3yYoxrdwXSDV25dmZr1+bwdXXWuNlxXNQ6Tqfg0guVDYNMztPPhTkl16sXER2gf+9lzkXTUFfLVgWpmGmiFrVYllLxE8X0ojNcvcoxVg94g49uIovi5jEzXNaGRqqij8vqYwrsTvV0bRQS2BY/lhKGLyVgCmDN04QGp/dVd71wKXse6k7QalJsrMw5y2/ft51u7vi6uTeFOn6JlB+bjIjf4ZHvj0u2X428XbEJDuNbCeuFRNfENziWleP+QWOZtcZBBWXR+qqH+eEowHINCaswECFO6gSd5l3Jm9jpMkpgzNbyeO6HLNkN/dPmRMrmqkd6vleCjun94k7kDR4hNE/E0la9g/eb68Bl0opeZ15HM9byWXaSi1o6bg/mqDjQ0IOTZ/t63g0F2nRRcKX+fyxSxp3n8VxPvyIkw8QxlxqbbiYide8aYjwSdmQEcY+hdPECSCgUAGaItKxSMhhQqECVclyiuiz7wBBL4B3pLRVXtNXBms4C9NZ35tX7WQscYqzxMx0T6cLXgDCv3NDnlk=
